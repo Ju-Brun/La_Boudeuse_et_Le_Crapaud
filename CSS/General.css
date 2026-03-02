@@ -1,0 +1,47 @@
+.bleu{
+    color: #748ff9;
+}
+.Ligne_beige{
+    background-color: #ffe9d6;
+    text-align: center;
+}
+.typo_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.typo_titre{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* ----------------------------------------------------- header -------------------------------------------------------- */
+.Header{
+    display: flex;
+    flex-direction: row;
+    background-color: #748ff9;
+    justify-content: space-around;
+    padding: 1rem;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.bouton{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition-duration: 1s;
+}
+.bouton:hover{
+    transition-duration: 1s;
+    text-decoration: underline;
+    color: #ffffff;
+}
+.bouton2{
+    color: #000000;
+    font-size: 1.5rem;
+    transition-duration: 1s;
+}
+.bouton2:hover{
+    transition-duration: 1s;
+    color: #ffffff;
+}
