@@ -1,0 +1,29 @@
+.coin_bg{
+    float: left;
+    rotate:270deg ;
+    margin-bottom : 45px;
+}
+.coin_bd{
+    float: right;
+    rotate: 180deg;
+}
+
+.img_accueil{
+    border-radius: 15px;
+    width: 88%;
+    margin: 6%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+.flex_context{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    margin: 10%;
+    align-items: center;
+}
+.text_context{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
