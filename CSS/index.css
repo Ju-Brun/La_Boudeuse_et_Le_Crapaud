@@ -1,11 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .coin_bg{
     float: left;
-    rotate:270deg ;
+    transform: rotate(270deg);
     margin-bottom : 45px;
 }
 .coin_bd{
     float: right;
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 .img_accueil{
