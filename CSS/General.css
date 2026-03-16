@@ -25,6 +25,7 @@
 }
 
 
+
 /* ----------------------------------------------------- header -------------------------------------------------------- */
 .navbar{
     display: flex;
@@ -54,4 +55,18 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row: auto ;
+}
+
+
+
+/* ----------------------------------------------------- footer -------------------------------------------------------- */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+}
+.list_footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
