@@ -1,47 +1,60 @@
 /* ----------------------------------------------------- Typo -------------------------------------------------------- */
 
 
-.outfit{
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amore Christmas';
+    src: url('./TYPO/Amore Christmas.otf') format('opentype');
 }
 
 /* ----------------------------------------------------- Générale -------------------------------------------------------- */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-.bleu{
+.bleu {
     color: #748ff9;
     font-size: 120%;
 }
-.fondbleu{
+
+.fondbleu {
     background-color: #748ff9;
 }
-.fondblanc{
+
+.fondblanc {
     background-color: #ffffff;
 }
-.Ligne_beige{
+
+.Ligne_beige {
     background-color: #ffe9d6;
     text-align: center;
     margin: 0rem;
 }
-.gras{
+
+.gras {
     font-weight: bold;
 }
-.typo_text{
-font-family: "Outfit", sans-serif;
+
+.typo_text {
+    font-family: "Outfit", sans-serif;
 }
-.typo_titre{
-    font-family: 'Times New Roman', Times, serif;
+
+.typo_titre {
+    font-family: "Foremost", sans-serif;
+    
 }
-.img{
+
+.img {
     border-radius: 15px;
     margin: 1%;
 }
@@ -49,7 +62,7 @@ font-family: "Outfit", sans-serif;
 
 
 /* ----------------------------------------------------- header -------------------------------------------------------- */
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     background-color: #748ff9;
@@ -58,36 +71,47 @@ font-family: "Outfit", sans-serif;
     padding-left: 15%;
     padding-right: 15%;
 }
-.bouton{
+
+.bouton {
     color: #000000;
     text-decoration: none;
     font-size: 1.5rem;
     transition-duration: 1s;
 }
-.bouton:hover{
+
+.bouton:hover {
     transition-duration: 1s;
     text-decoration: underline;
 }
-.bouton2{
+
+.bouton2 {
     color: #000000;
     font-size: 1.5rem;
     transition-duration: 1s;
 }
-.header{
+
+.header {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: auto ;
+    grid-row: auto;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 1%;
 }
 
 
 
 /* ----------------------------------------------------- footer -------------------------------------------------------- */
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     margin: 1%;
 }
-.list_footer{
+
+.list_footer {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -96,16 +120,18 @@ font-family: "Outfit", sans-serif;
 
 
 /* ----------------------------------------------- les grilles de pages -------------------------------------------------- */
-.grille{
+.grille {
     display: grid;
     grid-template-columns: 50fr 50fr;
     padding: 5%;
 }
-.sous_grille{
+
+.sous_grille {
     display: flex;
     flex-direction: column;
 }
-.carte_grille{
+
+.carte_grille {
     padding: 2%;
     border-radius: 15px;
     margin: 1%;
