@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
+    <script src="../Ggmaps.js"></script>
     <link type="text/css" rel="stylesheet" href="../CSS/Morlaix.css">
     <link type="text/css" rel="stylesheet" href="../CSS/General.css">
     <title>LBLC - Morlaix</title>
@@ -41,7 +42,15 @@
             </p>
         </div>
         <div class="sous_grille">
+
             <img class="img" src="https://placehold.co/500x250" />
+            
+            <div id="map"></div>
+
+        <!-- prettier-ignore -->
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8", v: "weekly", internalUsageAttributionIds: "gmp_git_jsapisamples_v1_core-maps" });</script>
+
             <div class="typo_text fondblanc carte_grille">
                 <h1 class="typo_titre">Morlaix</h1>
                 <p class="typo_text">
@@ -66,7 +75,7 @@
 
 
     <footer class="footer">
-        <img class="logo" src="./IMG/boudeuseNB.png" alt="LogoLBLC" />
+        <img class="logo" src="../IMG/boudeuseNB.png" alt="LogoLBLC" />
         <div class="list_footer">
             <h2 class="typo_titre2">Contactez-nous</h2><br>
             <p class="typo_text"><strong>Email :</strong> laboudeuse.lecrapaud@gmail.com</p>
