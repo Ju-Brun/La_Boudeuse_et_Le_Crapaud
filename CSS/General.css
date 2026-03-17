@@ -24,7 +24,7 @@
 
 .bleu {
     color: #748ff9;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .fondbleu {
@@ -51,7 +51,14 @@
 
 .typo_titre {
     font-family: "Foremost", sans-serif;
-    
+    font-size: 350%;
+
+}
+
+.typo_titre2 {
+    font-family: "Foremost", sans-serif;
+    font-size: 200%;
+
 }
 
 .img {
