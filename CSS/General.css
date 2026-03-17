@@ -1,7 +1,20 @@
+/* ----------------------------------------------------- Typo -------------------------------------------------------- */
+
+
+.outfit{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ----------------------------------------------------- Générale -------------------------------------------------------- */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .bleu{
@@ -23,7 +36,7 @@
     font-weight: bold;
 }
 .typo_text{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: "Outfit", sans-serif;
 }
 .typo_titre{
     font-family: 'Times New Roman', Times, serif;
