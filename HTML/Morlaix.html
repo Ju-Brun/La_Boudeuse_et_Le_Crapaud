@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-    <script src="../Ggmaps.js"></script>
     <link type="text/css" rel="stylesheet" href="../CSS/Morlaix.css">
     <link type="text/css" rel="stylesheet" href="../CSS/General.css">
+
+    <style>
+        #map {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
     <title>LBLC - Morlaix</title>
 </head>
 <body>
@@ -25,45 +35,25 @@
         </div>
     </header>
 
-
     <div class="fondbleu grille">
         <div class="fondblanc carte_grille">
             <h1 class="typo_titre">Formulaire</h1>
-            <p class="typo_text">General<br>
-                General<br>
-                General<br>
-                General<br>
-                General<br>
-                ng<br>
-                General<br>
-                General<br>
-                General<br>
-                gngngn<br>
-            </p>
+            <p class="typo_text">Gn<br>Gn<br>Gn<br>Gn<br>Gn<br>ng<br>Gn<br>Gn<br>General<br>gngngn<br></p>
         </div>
         <div class="sous_grille">
 
-            <img class="img" src="https://placehold.co/500x250" />
-            
             <div id="map"></div>
-
-        <!-- prettier-ignore -->
-        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8", v: "weekly", internalUsageAttributionIds: "gmp_git_jsapisamples_v1_core-maps" });</script>
 
             <div class="typo_text fondblanc carte_grille">
                 <h1 class="typo_titre">Morlaix</h1>
                 <p class="typo_text">
                     Dans notre magasin, vous trouverez des objets uniques en plein coeur de la charmante ville de 
-                    <strong class="bleu">Morlaix</strong>.<br>
-                    <br>
+                    <strong class="bleu">Morlaix</strong>.<br><br>
                     Vous y trouverez tous les styles de <strong class="bleu">meubles</strong> et de <strong class="bleu">
                     décorations anciennes</strong>. Du bois doré, du mobilier d'époque, du design, du vintage, des tableaux, des 
-                    livres, des vinyles et tant d'autres choses.<br>
-                    <br>
-                    Chez nous, <strong class="bleu">tout est unique</strong>, il n't a pas deux exemplaires en stock alors passez 
-                    nous voir régulièrement pour ne pas rater les nouveaux arrivages ou suivez nous sur les réseaux.<br>
-                    <br>
+                    livres, des vinyles et tant d'autres choses.<br><br>
+                    Chez nous, <strong class="bleu">tout est unique</strong>, il n'y a pas deux exemplaires en stock alors passez 
+                    nous voir régulièrement pour ne pas rater les nouveaux arrivages ou suivez nous sur les réseaux.<br><br>
                     <strong class="bleu">Horaires d'ouverture</strong><br>
                     - Jeudi       10h-12h / 14h-18h<br>
                     - Vendredi    10h-12h / 14h-18h<br>
@@ -72,7 +62,6 @@
             </div>
         </div>
     </div>
-
 
     <footer class="footer">
         <img class="logo" src="../IMG/boudeuseNB.png" alt="LogoLBLC" />
@@ -95,10 +84,13 @@
         </div>
         <div class="list_footer">
             <h2 class="typo_titre2">Newsletter</h2><br>
-            <div class="fondbleu">
-                ce sera un bouton
-            </div>
+            <div class="fondbleu">ce sera un bouton</div>
         </div>
     </footer>
+
+    <!-- Ggmaps.js AVANT l'API pour que initMap() soit défini au moment du callback -->
+    <script src="../GgmapsM.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8&callback=initMap&v=weekly" async defer></script>
+
 </body>
 </html>

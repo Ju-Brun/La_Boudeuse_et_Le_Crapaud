@@ -1,0 +1,42 @@
+/* ===== MAP ===== */
+#map {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== MARQUEUR PERSONNALISÉ ===== */
+.custom-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marker-pin {
+    background-color: #1a3a5c; /* bleu cohérent avec .bleu du site */
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Petite flèche en bas du marqueur */
+.marker-pin::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px 6px 0 6px;
+    border-style: solid;
+    border-color: #1a3a5c transparent transparent transparent;
+}
