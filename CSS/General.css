@@ -156,3 +156,29 @@
 #map {
     height: 100%;
 }
+
+
+/* ------------------------------------------- Formulaire -------------------------------------------------------- */
+.formulaire{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.formulaire2{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.form{
+    width: 100%;
+    margin: 1rem;
+}
+.bouton_form{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #748ff9;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 5rem;
+    border: #ffffff 5px solid;
+}
