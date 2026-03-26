@@ -27,10 +27,8 @@
 
     <div class="fondbleu grille">
         <div class="fondblanc carte_grille">
-            <h1 class="typo_titre">Formulaire</h1>
-            <form class="formulaire" action="../index.html" method="post">
-
-                <div class="formulaire2">
+            <h1 class="typo_titre gn">Formulaire</h1>
+            <form class="formulaire login-form " action="../index.html" method="post">
                     <div class="form">
                         <label class="typo_text gras" for="nom">Nom*</label><br>
                         <input name="nom" type="text" required autocomplete="name" />
@@ -50,19 +48,18 @@
                         <label class="typo_text gras" for="email">Email*</label><br>
                         <input name="email" type="email" required autocomplete="email" />
                     </div>
-                </div>
 
-                <div class="form">
+                <div class="form2">
                     <label class="typo_text gras" for="sujet">Sujet*</label><br>
-                    <input name="sujet" type="text" required autocomplete="text" />
+                    <input class="longueur" name="sujet" type="text" required autocomplete="text" />
                 </div>
 
-                <div class="form">
+                <div class="form2">
                     <label class="typo_text gras" for="message">Message*</label><br>
-                    <input name="message" type="text" required autocomplete="text" />
+                    <input class="longueur" name="message" type="text" required autocomplete="text" />
                 </div>
 
-                <button type="submit" class="bouton_form">Envoyer</button>
+                <button type="submit" class="bouton_form form2">Envoyer</button>
             </form>
         </div>
         <div class="sous_grille">

@@ -160,17 +160,16 @@
 
 /* ------------------------------------------- Formulaire -------------------------------------------------------- */
 .formulaire{
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-}
-.formulaire2{
+    padding: 4%;
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
 .form{
-    width: 100%;
     margin: 1rem;
+}
+.form2{
+    margin: 1rem;
+    grid-column: span 2;
 }
 .bouton_form{
     color: #000000;
@@ -179,6 +178,19 @@
     background-color: #748ff9;
     border-radius: 15px;
     padding: 1rem;
-    margin: 5rem;
+    margin-top: 2rem;
+    margin-left: 40%;
+    margin-right: 25%;
     border: #ffffff 5px solid;
+}
+.formulaire input {
+  padding: 1rem;
+  border: 2px solid #748ff9;
+  border-radius: 10px;
+}
+.longueur{
+    width: 87%;
+}
+.gn{
+    padding: 4%;
 }

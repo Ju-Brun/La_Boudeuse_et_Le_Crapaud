@@ -39,18 +39,40 @@
 
      <div class="fondbleu grille">
         <div class="fondblanc carte_grille">
-            <h1 class="typo_titre">Formulaire</h1>
-            <p class="typo_text">General<br>
-                General<br>
-                General<br>
-                General<br>
-                General<br>
-                ng<br>
-                General<br>
-                General<br>
-                General<br>
-                gngngn<br>
-            </p>
+            <h1 class="typo_titre gn">Formulaire</h1>
+            <form class="formulaire login-form " action="../index.html" method="post">
+                    <div class="form">
+                        <label class="typo_text gras" for="nom">Nom*</label><br>
+                        <input name="nom" type="text" required autocomplete="name" />
+                    </div>
+
+                    <div class="form">
+                        <label class="typo_text gras" for="prenom">Prénom*</label><br>
+                        <input name="prenom" type="text" required autocomplete="name" />
+                    </div>
+
+                    <div class="form">
+                        <label class="typo_text gras" for="tel">Télephone</label><br>
+                        <input name="tel" type="tel"/>
+                    </div>
+
+                    <div class="form">
+                        <label class="typo_text gras" for="email">Email*</label><br>
+                        <input name="email" type="email" required autocomplete="email" />
+                    </div>
+
+                <div class="form2">
+                    <label class="typo_text gras" for="sujet">Sujet*</label><br>
+                    <input class="longueur" name="sujet" type="text" required autocomplete="text" />
+                </div>
+
+                <div class="form2">
+                    <label class="typo_text gras" for="message">Message*</label><br>
+                    <input class="longueur" name="message" type="text" required autocomplete="text" />
+                </div>
+
+                <button type="submit" class="bouton_form form2">Envoyer</button>
+            </form>
         </div>
         <div class="sous_grille">
 
