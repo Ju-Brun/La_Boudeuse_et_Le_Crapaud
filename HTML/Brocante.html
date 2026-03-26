@@ -11,16 +11,20 @@
 </head>
 <body>
     <header class="header">
-        <p class="Ligne_beige bleu typo_text gras">BROCANTE  -  ANTIQUITÉS  -  DÉBARRAS</p>
+        <p class="Ligne_beige bleu typo_text gras">BROCANTE - ANTIQUITÉS - DÉBARRAS</p>
         <div class="navbar">
-            <a href="../index.html"><img class="logo" src="../IMG/boudeuseNB.png" alt="LogoLBLC" /></a>
-            <a class="typo_titre bouton2" href="./Brocante.html">Brocante</a>
-            <a class="typo_titre bouton" href="./Debarras.html">Débarras</a>
-            <a class="typo_titre bouton" href="./Morlaix.html">Morlaix</a>
-            <a class="typo_titre bouton" href="./Guerlesquin.html">Guerlesquin</a>
+            <a href="../index.html"><img src="../IMG/boudeuseNB.png" alt="LogoLBLC" class="logo"></a>
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
+            <div class="menu" id="menu">
+                <a class="typo_titre bouton2" href="../HTML/Brocante.html">Brocante</a>
+                <a class="typo_titre bouton" href="../HTML/Debarras.html">Débarras</a>
+                <a class="typo_titre bouton" href="../HTML/Morlaix.html">Morlaix</a>
+                <a class="typo_titre bouton" href="../HTML/Guerlesquin.html">Guerlesquin</a>
+            </div>
         </div>
     </header>
-
 
     <div class="fondbleu grille">
         <div class="fondblanc carte_grille">
@@ -103,5 +107,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "flex" || menu.style.display === "") {
+                menu.style.display = "none"; // Cacher le menu
+            } else {
+                menu.style.display = "flex"; // Afficher le menu
+            }
+        });
+    </script>
 </body>
 </html>
