@@ -31,6 +31,10 @@
 .grille_autre{
     display: grid;
     grid-template-columns: 33fr 33fr 33fr;
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .carte_autre{
     background-color: #ffffff;

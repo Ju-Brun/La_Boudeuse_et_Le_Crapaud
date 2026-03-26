@@ -85,6 +85,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     transition-duration: 1s;
+    margin: 2rem;
 }
 
 .bouton:hover {
@@ -110,6 +111,38 @@
     margin: 1%;
 }
 
+.menu {
+    display: flex;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: 2rem; 
+    cursor: pointer; 
+    flex-direction: column;
+    position: absolute;
+    background-color: #748ff9;
+    width: 100%;
+    top: 60px;
+    left: 0; 
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        background-color: #748ff9; 
+        width: 100%; 
+        top: 60px; 
+        left: 0; 
+    }
+    .menu-toggle {
+        display: block; 
+    }
+}
+
 
 
 /* ----------------------------------------------------- footer -------------------------------------------------------- */
@@ -118,13 +151,22 @@
     justify-content: space-around;
     margin: 1%;
 }
-
+@media (max-width: 1000px) {
+    .footer {
+        display: none;
+    }
+}
 .list_footer {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
+.newsletter{
+    border: #000000 4px solid;
+    background-color: #748ff9;
+    border-radius: 10px;
+    padding: 5px;
+}
 
 
 /* ----------------------------------------------- les grilles de pages -------------------------------------------------- */
