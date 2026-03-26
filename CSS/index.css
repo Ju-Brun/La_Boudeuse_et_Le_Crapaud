@@ -18,6 +18,10 @@
     grid-template-columns: 50fr 50fr;
     margin: 10%;
     align-items: center;
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .text_context{
     display: flex;
