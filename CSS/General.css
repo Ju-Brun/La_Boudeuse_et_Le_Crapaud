@@ -131,7 +131,7 @@
     right: 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu {
         display: none; 
         flex-direction: column; 
@@ -154,7 +154,7 @@
     justify-content: space-around;
     margin: 1%;
 }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .footer {
         display: none;
     }
@@ -225,17 +225,15 @@
     padding: 1rem;
     margin-top: 2rem;
     margin-left: 40%;
-    margin-right: 25%;
     border: #ffffff 5px solid;
 }
 .formulaire input {
-  padding: 1rem;
+  width: 100%;
+  padding: 0.5rem;
   border: 2px solid #748ff9;
   border-radius: 10px;
 }
-.longueur{
-    width: 87%;
-}
+
 .gn{
     padding: 4%;
 }
